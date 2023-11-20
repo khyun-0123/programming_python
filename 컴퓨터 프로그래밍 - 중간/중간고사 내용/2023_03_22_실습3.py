@@ -1,0 +1,15 @@
+print("매출 분석 프로그램 입니다.")
+print("구매한 상품을 알려주세요.")
+trigim_b = int(input("삼각김밥(900원)을 몇 개 구입하셨습니까? : "))
+dosilak_b = int(input("도시락(3500원)을 몇 개 구입하셨습니까? : "))
+print("판매한 상품을 알려주세요.")
+bananamilk_s = int(input("바나나맛 우유(1800원)를 몇 개 판매하셨습니까? : "))
+coke_s = int(input("콜라(1500원)를 몇 개 판매하셨습니까? : "))
+saeu_s = int(input("새우깡(2000)를 몇 개 판매하셨습니까? : "))
+cancoffee_s = int(input("캔커피(1800)를 몇 개 판매하셨습니까? : "))
+dosilak_s = int(input("도시락(3500)를 몇 개 판매하셨습니까? : "))
+buy = trigim_b*900 + dosilak_b*3500
+sell = bananamilk_s*1800 + coke_s*1500 + saeu_s*2000 + cancoffee_s*1800 + dosilak_s*3500
+print("총 구입비", buy)
+print("총 판매액", sell)
+print("총 매출액은", sell-buy, "입니다.")

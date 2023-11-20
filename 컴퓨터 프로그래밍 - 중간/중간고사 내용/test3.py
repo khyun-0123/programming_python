@@ -1,0 +1,1 @@
+pick1, pick2, pick3, pick4, pick5, pick6 = map(int, input("1~45 사이의 숫자 6개를 입력해주세요.(입력예시 1, 2, 3, 4, 5, 6): ").split())

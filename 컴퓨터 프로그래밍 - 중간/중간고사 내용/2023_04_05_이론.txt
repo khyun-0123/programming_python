@@ -1,0 +1,16 @@
+flow차트 = 흐름도
+
+(저번시간 배운 내용 빠진거)
+age = 1234
+age[0] = 1
+age[1] = 2
+
+<import random>
+
+import random
+a = random.choice(["a", "b", "c"])
+print a
+
+---------------------
+문자 + 문자만 가능.
+문자 + 숫자는 오류 발생

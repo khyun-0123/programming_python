@@ -1,0 +1,57 @@
+<tkinter 사용법>
+
+시작 from tkinter import *
+
+중간 window = Tk()
+
+끝 window.mainloop()
+
+------------------------------
+[제목 달기]
+window.title("윈도창 연습")
+
+[창 사이즈 조절]
+window.geometry("400x100")
+window.resizable(width = FALSE, height = TRUE)
+
+[레이블 달기]
+label1 = Label(window, text = "안녕")
+label1.pack()
+
+-> 배경 색상 bg = magenta
+-> 폰트 색상 fg = "blue"
+-> 레이블 폰트 font = ("궁서체, 30")
+-> 위치 정렬 anchor = center
+   ('n' 위쪽 가운데 / 's' 아래쪽 가운데 / 'w' 왼쪽 가운데 /
+    'e' 오른쪽 가운데 / 'nw' 왼쪽 위 / 'ne' 오른쪽 위 /
+      'sw' 왼쪽 아래 / 'se' 오른쪽 아래)
+
+[사진 넣기]
+photo1 = PhotoImage(file = "")
+label1 = Label(window, image = photo1)
+
+label1.pack()
+
+-> 사진 두개 넣어서 양 옆으로 넣으려면, label1.pack(side = LEFT)
+
+[버튼 달기]
+button1 = Button(window, text = "", fg = "", command = quit)
+
+button1.pack()
+
+[메세지박스 사용법]
+messagebox.showinfo("강아지 버튼", "강아지가 귀엽죠?")
+앞 부분은 윈도창 이름, 뒷부분은 알림 내용
+
+[버튼 사용법]
+button1 = Button(window, image = photo, command = myFunc)
+button.back()
+
+[여백 넣기]
+padx pady 외부 여백
+ipadx ipady 내부 여백
+
+[고정위치에 배치]
+pack() 대신 place() 사용
+
+
